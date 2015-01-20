@@ -24,5 +24,10 @@ namespace Cherry_Screen
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
