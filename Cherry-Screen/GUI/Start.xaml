@@ -18,8 +18,8 @@
         <Button Content="Button1" HorizontalAlignment="Left" Margin="112,92,0,0" VerticalAlignment="Top" Width="512" Height="317"  Style="{StaticResource MyButton}" />
         <Button Content="Button2" HorizontalAlignment="Left" Margin="112,471,0,0" VerticalAlignment="Top" Width="512" Height="317" Style="{StaticResource MyButton}" />
 
-        <local:OptionsBar Grid.Row="1" Grid.Column="1"></local:OptionsBar>
-        <local:InfoBar Grid.Row="1" Grid.Column="0"></local:InfoBar>
+        <local:OptionsBar Grid.Row="1" Grid.Column="0"></local:OptionsBar>
+        <local:ClockBar Grid.Row="1" Grid.Column="1"></local:ClockBar>
         
     </Grid>
 

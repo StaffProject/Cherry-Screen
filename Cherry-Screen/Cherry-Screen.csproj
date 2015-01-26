@@ -59,8 +59,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GUI\InfoBar.xaml.cs">
-      <DependentUpon>InfoBar.xaml</DependentUpon>
+    <Compile Include="GUI\ClockBar.xaml.cs">
+      <DependentUpon>ClockBar.xaml</DependentUpon>
     </Compile>
     <Compile Include="GUI\OptionsBar.xaml.cs">
       <DependentUpon>OptionsBar.xaml</DependentUpon>
@@ -95,7 +95,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="GUI\InfoBar.xaml">
+    <Page Include="GUI\ClockBar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

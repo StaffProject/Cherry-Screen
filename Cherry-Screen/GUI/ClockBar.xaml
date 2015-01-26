@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="Cherry_Screen.GUI.InfoBar"
+﻿<UserControl x:Class="Cherry_Screen.GUI.ClockBar"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -7,6 +7,7 @@
              Background="Red"
              Width="960" Height="150">
     <Grid>
-            
+        <Label Name="clockControl" FontSize="100" FontFamily="Trebuchet" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Margin="220,0,365,0.4"/>
+        <Label Name="dateControl" FontSize="40" FontFamily="Trebuchet" VerticalContentAlignment="Center" Margin="625,0,0,0.4"/>
     </Grid>
 </UserControl>
