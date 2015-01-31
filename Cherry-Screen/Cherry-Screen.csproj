@@ -59,6 +59,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Download\DownloadWebsite\DownloadNews.cs" />
+    <Compile Include="Download\DownloadWebsite\DownloadWebsite.cs" />
     <Compile Include="GUI\ClockBar.xaml.cs">
       <DependentUpon>ClockBar.xaml</DependentUpon>
     </Compile>
@@ -111,6 +113,9 @@
   <ItemGroup>
     <Resource Include="GUI\Graphics\base.png" />
     <Resource Include="GUI\Graphics\click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Download\DownloadDate\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

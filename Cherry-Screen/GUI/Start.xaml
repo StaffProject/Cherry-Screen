@@ -6,7 +6,7 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="900"></RowDefinition>
+            <RowDefinition Height="930"></RowDefinition>
             <RowDefinition Height="150"></RowDefinition>
         </Grid.RowDefinitions>
 
@@ -15,12 +15,14 @@
             <ColumnDefinition Width="960"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <Button Content="Button1" HorizontalAlignment="Left" Margin="112,92,0,0" VerticalAlignment="Top" Width="512" Height="317"  Style="{StaticResource MyButton}" />
-        <Button Content="Button2" HorizontalAlignment="Left" Margin="112,471,0,0" VerticalAlignment="Top" Width="512" Height="317" Style="{StaticResource MyButton}" />
-
         <local:OptionsBar Grid.Row="1" Grid.Column="0"></local:OptionsBar>
         <local:ClockBar Grid.Row="1" Grid.Column="1"></local:ClockBar>
         
+        
+        <WebBrowser Name="news" HorizontalAlignment="Left" Height="380" Margin="80,45,0,0" VerticalAlignment="Top" Width="770"/>
+        <WebBrowser Name="replacement" HorizontalAlignment="Left" Height="380" Margin="80,480,0,0" VerticalAlignment="Top" Width="770"/>
+
+
     </Grid>
 
 </Window>

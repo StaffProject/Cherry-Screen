@@ -51,18 +51,18 @@ namespace Cherry_Screen.GUI
         {
             switch (number)
             {
-                case 1: return "Styczeń"; break;
-                case 2: return "Luty"; break;
-                case 3: return "Marzec"; break;
-                case 4: return "Kwiecień"; break;
-                case 5: return "Maj"; break;
-                case 6: return "Czerwiec"; break;
-                case 7: return "Lipiec"; break;
-                case 8: return "Sierpień"; break;
-                case 9: return "Wrzesień"; break;
-                case 10: return "Październik"; break;
-                case 11: return "Listopad"; break;
-                case 12: return "Grudzień"; break;
+                case 1: return "Stycznia"; break;
+                case 2: return "Lutego"; break;
+                case 3: return "Marca"; break;
+                case 4: return "Kwietnia"; break;
+                case 5: return "Maja"; break;
+                case 6: return "Czerwca"; break;
+                case 7: return "Lipca"; break;
+                case 8: return "Sierpnia"; break;
+                case 9: return "Września"; break;
+                case 10: return "Października"; break;
+                case 11: return "Listopada"; break;
+                case 12: return "Grudnia"; break;
             }
 
             return "";

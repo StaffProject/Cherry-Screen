@@ -22,6 +22,9 @@ namespace Cherry_Screen.GUI
         public Start()
         {
             InitializeComponent();
+
+            news.Navigate("http://en.wikipedia.org/");
+            replacement.Navigate("http://www.staff.edu.pl/zastepstwa.html");
         }
     }
 }
