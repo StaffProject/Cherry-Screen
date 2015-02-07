@@ -17,10 +17,19 @@
 
         <local:OptionsBar Grid.Row="1" Grid.Column="0"></local:OptionsBar>
         <local:ClockBar Grid.Row="1" Grid.Column="1"></local:ClockBar>
+
+
+        <WebBrowser Name="news" HorizontalAlignment="Left" Height="410" Margin="35,45,0,0" VerticalAlignment="Top" Width="885"/>
+        <WebBrowser Grid.Column="1" Name="plan" HorizontalAlignment="Left" Height="425" Margin="45,455,0,0" VerticalAlignment="Top" Width="870"/>
         
-        
-        <WebBrowser Name="news" HorizontalAlignment="Left" Height="380" Margin="80,45,0,0" VerticalAlignment="Top" Width="770"/>
-        <WebBrowser Name="replacement" HorizontalAlignment="Left" Height="380" Margin="80,480,0,0" VerticalAlignment="Top" Width="770"/>
+        <TabControl Grid.Column="1" HorizontalAlignment="Left" Height="410" Margin="45,10,0,0" VerticalAlignment="Top" Width="870">
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
 
 
     </Grid>

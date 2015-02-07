@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Cherry_Screen.Download.DownloadWebsite;
 
 namespace Cherry_Screen.GUI
 {
@@ -23,8 +24,12 @@ namespace Cherry_Screen.GUI
         {
             InitializeComponent();
 
-            news.Navigate("http://en.wikipedia.org/");
-            replacement.Navigate("http://www.staff.edu.pl/zastepstwa.html");
+            DownloadNews test = new DownloadNews("http://staff.edu.pl/category/news/");
+            test.download();
+
+            news.Navigate(new Uri("C:/Users/Piotr Bielski/Documents/Programowanie/Projekty/Cherry-Screen/Cherry-Screen/bin/Debug/websiteFiles/NewsWebsiteFiles/mainNews.html"));
+            plan.Navigate("http://www.staff.edu.pl/plan_lekcji/index.html");
+            
         }
     }
 }

@@ -4,40 +4,38 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
+using System.IO;
 
 namespace Cherry_Screen.Download.DownloadWebsite
 {
     abstract class DownloadWebsite
     {
-        protected Regex pattern
-        {
-            get { return pattern; }
-            private set { pattern = value; }
-        }
+        public string path;
 
-        protected string path
-        {
-            get { return path; }
-            private set { path = value; }
-        }
-
-        protected DownloadWebsite(string path, string pattern)
+        protected DownloadWebsite(string path)
         {
             this.path = path;
-            this.pattern = new Regex(pattern);
         }
 
-        protected virtual string getWebsiteSource(string path)
+        protected virtual void createDirectories()
         {
-            return "";
+            if (!Directory.Exists("websiteSources"))
+                Directory.CreateDirectory("websiteSources");
+
+            if (!Directory.Exists("websiteFiles"))
+                Directory.CreateDirectory("websiteFiles");
         }
 
-        protected virtual void rebuildWebsite(string source, Regex pattern)
+        protected virtual void downloadWebsiteSource(string path, string fileName)
+        {
+        }
+
+        protected virtual void rebuildWebsite(List<string> newsPaths)
         { 
             //tworzenie nowego pliku html
         }
 
-        protected virtual void download()
+        public virtual void download()
         {
             //getWebsiteSource()
             //rebuildWebsite()
